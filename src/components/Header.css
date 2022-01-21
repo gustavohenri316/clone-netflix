@@ -1,0 +1,80 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+    opacity: 95%;
+  
+}
+header.black {
+    background-color: #141414;
+}
+.menu{
+    padding-right: 15px;
+    display: none;
+}
+.header--logo{
+    display: flex;
+    align-items: center;
+}
+.header--logo--edite{
+    height: 30px;
+}
+.header--logo--edite img{
+   z-index: 1;
+   height: 100%;
+}
+.header--user {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.header--user-1{
+    height: 35px;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+.header--user-1 p{
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.header--user-1 img {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    border-radius: 3px;
+}
+.header--items{
+    display: inline-block;
+    font-size: 12px;
+    color: #e5e5e5;
+    top: 15px;
+}
+.header--items--edite{
+    padding-left: 30px;
+    cursor: pointer;
+}
+.header--items--edite:hover{
+    color: rgb(189, 59, 59);
+}
+@media (max-width:760px){
+    .header--items, .Icons, .header--user-para{
+        display: none;
+    }
+    .menu{
+        display: inherit;
+    }
+}
